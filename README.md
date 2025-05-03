@@ -18,8 +18,10 @@ if (toggle) {
 return
 
 ClickLoop:
-    For index, pos in positions {
-        Click, % pos[1], % pos[2]
+    for index, pos in positions {
+        x := pos[1]
+        y := pos[2]
+        Click, %x%, %y%
         Sleep, %clickInterval%
     }
     Sleep, %loopInterval%
